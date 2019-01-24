@@ -21,11 +21,12 @@ function getFirstSelector(selector){
     // return document.getElementById('grand-node').children[0].children[0].children[0].children[0]
   }
 
-function increaseRankBy(p){
+function increaseRankBy(n){
   let p = document.querySelectorAll(".ranked-list li")
   for (let i = 0; i < p.length; i++) {
-    p[i].innerHTML = (i + 1)
+   
+    p[i].innerHTML = parseInt(p[i].innerHTML)+ n
     }
-
+    // parseInt(string, radix)
   }
 
